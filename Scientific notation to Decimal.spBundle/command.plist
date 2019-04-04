@@ -11,7 +11,7 @@ import decimal
 
 lines = ""
 for line in sys.stdin:
-    lines += line
+    lines += line.replace(' ', '')
 
 print(int(decimal.Decimal(lines)) if int(decimal.Decimal(lines)) == decimal.Decimal(lines) else decimal.Decimal(lines), end='')</string>
 	<key>input</key>
