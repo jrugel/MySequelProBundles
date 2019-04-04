@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>category</key>
+	<string>Format</string>
+	<key>command</key>
+	<string>#!/usr/local/bin/python3
+import sys
+import decimal
+
+lines = ""
+for line in sys.stdin:
+    lines += line
+
+print(int(decimal.Decimal(lines)) if int(decimal.Decimal(lines)) == decimal.Decimal(lines) else decimal.Decimal(lines), end='')</string>
+	<key>input</key>
+	<string>selectedtext</string>
+	<key>internalKeyEquivalent</key>
+	<dict>
+		<key>characters</key>
+		<string>D</string>
+		<key>keyCode</key>
+		<integer>2</integer>
+		<key>modifierFlags</key>
+		<integer>1703936</integer>
+	</dict>
+	<key>keyEquivalent</key>
+	<string>~$@D</string>
+	<key>name</key>
+	<string>Scientific notation to Decimal</string>
+	<key>output</key>
+	<string>replaceselection</string>
+	<key>scope</key>
+	<string>inputfield</string>
+	<key>uuid</key>
+	<string>F1C2A661-6518-49A2-952E-EB60B4018A35</string>
+</dict>
+</plist>
